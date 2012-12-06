@@ -10,5 +10,5 @@ re:Invent conference. I highly recommend [the video](http://www.youtube.com/watc
 in where web architecture is heading (elastic scaling, fault tolerance,
 etc.).
 
- > If you are using ssh to change something on your server, your
+ > If you are using `ssh` to change something on your server, your
  > automation is broken.

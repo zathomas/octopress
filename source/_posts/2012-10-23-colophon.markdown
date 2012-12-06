@@ -41,7 +41,7 @@ actually a new technique for blogging; This is how Movable Type has
 always worked, among others. But with Octopress, I get the alpha nerd
 pleasure of creating a new post like this:
 
-    rake new_post["Say What!"]
+    rake new_post["What the What?!"]
 
 [1]:http://www.allthingsdistributed.com/2011/02/website_amazon_s3.html
 [2]:http://stackoverflow.com/questions/8312162/static-hosting-on-amazon-s3-dns-configuration
