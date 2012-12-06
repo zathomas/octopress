@@ -1,0 +1,51 @@
+---
+layout: post
+title: "Colophon"
+date: 2012-10-23 11:05
+comments: true
+categories: web cloud blogging
+---
+I love Amazon Web Services. Their organization has been innovating at a
+breakneck pace. Since about [a year and a half ago][1], they have
+supported hosting a static website on S3.
+
+I finally switched over to that. [This post][2] is invaluable for
+getting all the configuration right to make the website work.
+
+The other technology I'm using this time around is a blogging engine
+called [Octopress][octopress] which is tailor-made for a web nerd like
+me. It's meant for editing GitHub pages, but since it generates a static
+website, it's also ideal for publishing to S3.
+
+A typical blogging engine like [Wordpress][wordpress] store posts, tags,
+etc. in a relational database and then uses some kind of server
+technology like PHP to dynamically generate a page for every web
+request. Not only does this make hosting and setup more complicated,
+this places a burden on your web server to do some actual computation
+whenever it needs to serve a page. Under normal circumstances, it's not
+much work, and your blog can hum along happily on a very inexpensive
+shared hosting account. The problem comes when circumstances become
+abnormal, such as when something on your blog gets linked from Reddit,
+Slashdot (yes, it [still exists][slashdot]), or Daring Fireball.
+
+What ought to be a happy day for the life of your blog becomes an
+emergency when your little server can no longer keep up. I should point
+out that in a shared hosting environment, you can expect downtime if
+_any_ of the customers on your shared host suddenly go viral.
+
+You can solve this problem with Wordpress by adding a plugin called [WP
+Super Cache][wp-super-cache]. How does it work? It bypasses the dynamic
+generation of pages and serves static files! With Octopress, I skip the
+middleman and simply generate static pages from the get-go. This isn't
+actually a new technique for blogging; This is how Movable Type has
+always worked, among others. But with Octopress, I get the alpha nerd
+pleasure of creating a new post like this:
+
+    rake new_post["Say What!"]
+
+[1]:http://www.allthingsdistributed.com/2011/02/website_amazon_s3.html
+[2]:http://stackoverflow.com/questions/8312162/static-hosting-on-amazon-s3-dns-configuration
+[octopress]:http://octopress.org/
+[wordpress]:http://wordpress.org/
+[slashdot]:http://slashdot.org/
+[wp-super-cache]:http://wordpress.org/extend/plugins/wp-super-cache/
