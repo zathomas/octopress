@@ -53,6 +53,12 @@ the later work before the earlier work was done.
 
 Here are the lessons for software development:
 
+1. The work is unknowable, because every time you finish something, you
+   learn something new. If you have a typical project planning phase,
+this is when you know the _least_ about the work to do in your project.
+This is probably the single most disorienting thing about software
+development, compared to other disciplines, and the one that most practitioners ignore, to their
+peril.
 1. What is more important: shipping on date X or taking care of every
    detail? The right answer will depend on your situation, but be
 conscious about the choice. The garage project was a success or a
